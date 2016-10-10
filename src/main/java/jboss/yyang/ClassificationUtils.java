@@ -300,13 +300,13 @@ public class ClassificationUtils {
         utils.parseModules(new File(args[0]), new File(args[1]));
 //        System.out.println(utils.getNewModules());
         System.out.println("----------------------");
+        printModules("NO_UPDATE MODULES:", utils.getNoUpdateModules());
+        System.out.println("----------------------");
         printModules("NEW MODULES:", utils.getNewModules());
         System.out.println("----------------------");
         printModules("REMOVED MODULES:", utils.getRemovedModules());
         System.out.println("----------------------");
         printModules("UPDATED MODULES:", utils.getUpdatedModules());
-        System.out.println("----------------------");
-        printModules("NO_UPDATE MODULES:", utils.getNoUpdateModules());
     }
 
     public static void printModules(String title, List<Module> modules) {
